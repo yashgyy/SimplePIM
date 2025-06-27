@@ -85,7 +85,7 @@ def main():
     t = (end-start) *1000
     print("the time consumed is "+str(t)+" ms")
     print("linear model weights: ")
-    print(model.weights.detach().numpy())
+    print(model.weights.detach().cpu().numpy())
     print("the groud truth: ")
     print(groud_truth)
 
